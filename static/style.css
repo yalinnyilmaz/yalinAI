@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #161b22;
+  padding: 16px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #4da3ff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+}
+
+nav a {
+  color: #c9d1d9;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover, nav a.active {
+  color: #4da3ff;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.hero span {
+  color: #4da3ff;
+}
+
+.chatbox {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #161b22;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+.chatlog {
+  height: 400px;
+  overflow-y: auto;
+  border-radius: 12px;
+  background: #0d1117;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+.bubble {
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  max-width: 80%;
+  line-height: 1.5;
+}
+.bubble.you {
+  background: #238636;
+  margin-left: auto;
+}
+.bubble.ai {
+  background: #30363d;
+}
+form {
+  display: flex;
+  gap: 10px;
+}
+input {
+  flex: 1;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+button {
+  background: #4da3ff;
+  border: none;
+  color: #0d1117;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+button:hover { filter: brightness(1.1); }
+
+.page {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #8b949e;
+  font-size: 14px;
+}
